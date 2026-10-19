@@ -1,13 +1,11 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>
-      Book a train ticket
-    </title>
-    <link rel="stylesheet" href="assets/bootstrap.min.css">
-    <link rel="stylesheet" href="css/task1.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Book a train ticket</title>
+    <link rel="stylesheet" href="assets/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/task1.css" />
   </head>
   <body>
     <main class="container py-4 py-md-5">
@@ -15,21 +13,27 @@
         <div class="col-12 col-lg-9">
           <section class="ticket-card" aria-labelledby="ticket-title">
             <header class="ticket-header">
-              <h1 id="ticket-title">
-                Book a train ticket
-              </h1>
+              <h1 id="ticket-title">Book a train ticket</h1>
             </header>
             <form class="ticket-body" action="task1.html" method="get">
               <fieldset class="mb-4">
-                <legend class="visually-hidden">
-                  Journey type
-                </legend>
+                <legend class="visually-hidden">Journey type</legend>
                 <div class="btn-group trip-group">
-                  <input class="btn-check" type="radio" id="one-way" name="journey" value="one-way">
-                  <label class="btn trip-choice" for="one-way">
-                    One way
-                  </label>
-                  <input class="btn-check" type="radio" id="round-trip" name="journey" value="round-trip">
+                  <input
+                    class="btn-check"
+                    type="radio"
+                    id="one-way"
+                    name="journey"
+                    value="one-way"
+                  />
+                  <label class="btn trip-choice" for="one-way"> One way </label>
+                  <input
+                    class="btn-check"
+                    type="radio"
+                    id="round-trip"
+                    name="journey"
+                    value="round-trip"
+                  />
                   <label class="btn trip-choice" for="round-trip">
                     Round trip
                   </label>
@@ -38,80 +42,107 @@
               <div class="row g-3">
                 <div class="col-12 col-md-6">
                   <div class="station-field">
-                    <label for="from">
-                      From
-                    </label>
-                    <input class="form-control" id="from" name="from" type="text" placeholder="Astana" required>
+                    <label for="from"> From </label>
+                    <input
+                      class="form-control"
+                      id="from"
+                      name="from"
+                      type="text"
+                      placeholder="Astana"
+                      required
+                    />
                   </div>
                 </div>
                 <div class="col-12 col-md-6">
                   <div class="station-field">
-                    <label for="to">
-                      To
-                    </label>
-                    <input class="form-control" id="to" name="to" type="text" placeholder="Almaty" required>
+                    <label for="to"> To </label>
+                    <input
+                      class="form-control"
+                      id="to"
+                      name="to"
+                      type="text"
+                      placeholder="Almaty"
+                      required
+                    />
                   </div>
                 </div>
                 <div class="col-12 col-md-4">
-                  <label class="form-label" for="departure">
-                    Departure
-                  </label>
-                  <input class="form-control" id="departure" name="departure" type="date" required>
+                  <label class="form-label" for="departure"> Departure </label>
+                  <input
+                    class="form-control"
+                    id="departure"
+                    name="departure"
+                    type="date"
+                    required
+                  />
                 </div>
                 <div class="col-12 col-md-4">
-                  <label class="form-label" for="return-date">
-                    Return
-                  </label>
-                  <input class="form-control" id="return-date" name="return" type="date">
+                  <label class="form-label" for="return-date"> Return </label>
+                  <input
+                    class="form-control"
+                    id="return-date"
+                    name="return"
+                    type="date"
+                  />
                 </div>
                 <div class="col-12 col-md-4">
                   <label class="form-label" for="passengers">
                     Passengers
                   </label>
-                  <select class="form-select" id="passengers" name="passengers" required>
-                    <option value="" selected>
-                      Choose passengers
-                    </option>
-                    <option value="1">
-                      1 adult
-                    </option>
-                    <option value="2">
-                      2 adults
-                    </option>
-                    <option value="3">
-                      3 adults
-                    </option>
-                    <option value="4">
-                      4 adults
-                    </option>
-                    <option value="5">
-                      5 adults
-                    </option>
-                    <option value="6">
-                      6 adults
-                    </option>
+                  <select
+                    class="form-select"
+                    id="passengers"
+                    name="passengers"
+                    required
+                  >
+                    <option value="" selected>Choose passengers</option>
+                    <option value="1">1 adult</option>
+                    <option value="2">2 adults</option>
+                    <option value="3">3 adults</option>
+                    <option value="4">4 adults</option>
+                    <option value="5">5 adults</option>
+                    <option value="6">6 adults</option>
                   </select>
                 </div>
                 <div class="col-12">
                   <fieldset>
-                    <legend class="field-legend">
-                      Carriage class
-                    </legend>
+                    <legend class="field-legend">Carriage class</legend>
                     <div class="d-flex flex-wrap gap-3">
                       <div class="form-check">
-                        <input class="form-check-input" type="radio" id="seat" name="carriage" value="seat" required>
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          id="seat"
+                          name="carriage"
+                          value="seat"
+                          required
+                        />
                         <label class="form-check-label" for="seat">
                           Seat
                         </label>
                       </div>
                       <div class="form-check">
-                        <input class="form-check-input" type="radio" id="coupe" name="carriage" value="coupe" required>
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          id="coupe"
+                          name="carriage"
+                          value="coupe"
+                          required
+                        />
                         <label class="form-check-label" for="coupe">
                           Coupé
                         </label>
                       </div>
                       <div class="form-check">
-                        <input class="form-check-input" type="radio" id="sleeper" name="carriage" value="sleeper" required>
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          id="sleeper"
+                          name="carriage"
+                          value="sleeper"
+                          required
+                        />
                         <label class="form-check-label" for="sleeper">
                           Sleeper
                         </label>
@@ -120,39 +151,64 @@
                   </fieldset>
                 </div>
                 <div class="col-12 col-md-6">
-                  <label class="form-label" for="phone">
-                    Phone
-                  </label>
+                  <label class="form-label" for="phone"> Phone </label>
                   <div class="input-group">
-                    <span class="input-group-text" id="phone-prefix">
-                      +7
-                    </span>
-                    <input class="form-control" id="phone" name="phone" type="tel" placeholder="701 234 56 78" autocomplete="tel" aria-describedby="phone-prefix" required>
+                    <span class="input-group-text" id="phone-prefix"> +7 </span>
+                    <input
+                      class="form-control"
+                      id="phone"
+                      name="phone"
+                      type="tel"
+                      placeholder="701 234 56 78"
+                      autocomplete="tel"
+                      aria-describedby="phone-prefix"
+                      required
+                    />
                   </div>
                 </div>
                 <div class="col-12 col-md-6">
-                  <label class="form-label" for="email">
-                    Email
-                  </label>
-                  <input class="form-control" id="email" name="email" type="email" placeholder="name@example.com" autocomplete="email" required>
+                  <label class="form-label" for="email"> Email </label>
+                  <input
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="name@example.com"
+                    autocomplete="email"
+                    required
+                  />
                 </div>
               </div>
               <div class="form-check form-switch mt-4">
-                <input class="form-check-input" id="sms" name="sms" type="checkbox" role="switch" value="yes">
+                <input
+                  class="form-check-input"
+                  id="sms"
+                  name="sms"
+                  type="checkbox"
+                  role="switch"
+                  value="yes"
+                />
                 <label class="form-check-label" for="sms">
                   Also send the ticket by SMS
                 </label>
               </div>
               <div class="form-check mt-2">
-                <input class="form-check-input" id="agreement" name="agreement" type="checkbox" value="accepted" required>
+                <input
+                  class="form-check-input"
+                  id="agreement"
+                  name="agreement"
+                  type="checkbox"
+                  value="accepted"
+                  required
+                />
                 <label class="form-check-label" for="agreement">
                   I agree with the carriage rules
                 </label>
               </div>
-              <div class="ticket-actions d-flex flex-column-reverse flex-md-row justify-content-md-end gap-2 mt-4">
-                <button class="btn clear-button" type="reset">
-                  Clear
-                </button>
+              <div
+                class="ticket-actions d-flex flex-column-reverse flex-md-row justify-content-md-end gap-2 mt-4"
+              >
+                <button class="btn clear-button" type="reset">Clear</button>
                 <button class="btn find-button" type="submit">
                   Find trains
                 </button>

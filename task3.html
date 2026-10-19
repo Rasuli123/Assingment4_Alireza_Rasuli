@@ -1,71 +1,103 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>
-      Reserve a table
-    </title>
-    <link rel="stylesheet" href="assets/bootstrap.min.css">
-    <link rel="stylesheet" href="css/task3.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Reserve a table</title>
+    <link rel="stylesheet" href="assets/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/task3.css" />
   </head>
   <body>
     <main class="container py-4 py-md-5">
       <div class="row justify-content-center">
         <div class="col-12 col-lg-8">
           <section class="form-panel">
-            <h1 class="h3 mb-2">
-              Reserve a table
-            </h1>
-            <p class="text-secondary">
-              Choose your visit details.
-            </p>
+            <h1 class="h3 mb-2">Reserve a table</h1>
+            <p class="text-secondary">Choose your visit details.</p>
             <form action="task3.html" method="get">
               <div class="row g-3">
                 <div class="col-12 col-md-6">
                   <label class="form-label" for="customer-name">
                     Your name
                   </label>
-                  <input class="form-control" id="customer-name" name="customer_name" type="text" autocomplete="name">
+                  <input
+                    class="form-control"
+                    id="customer-name"
+                    name="customer_name"
+                    type="text"
+                    autocomplete="name"
+                  />
                 </div>
                 <div class="col-12 col-md-6">
                   <label class="form-label" for="reservation-email">
                     Email
                   </label>
-                  <input class="form-control" id="reservation-email" name="email" type="email" autocomplete="email">
+                  <input
+                    class="form-control"
+                    id="reservation-email"
+                    name="email"
+                    type="email"
+                    autocomplete="email"
+                  />
                 </div>
                 <div class="col-12 col-md-6">
                   <label class="form-label" for="reservation-phone">
                     Phone
                   </label>
-                  <input class="form-control" id="reservation-phone" name="phone" type="tel" autocomplete="tel">
+                  <input
+                    class="form-control"
+                    id="reservation-phone"
+                    name="phone"
+                    type="tel"
+                    autocomplete="tel"
+                  />
                 </div>
                 <div class="col-12 col-md-6">
-                  <label class="form-label" for="guests">
-                    Guests
-                  </label>
-                  <input class="form-control" id="guests" name="guests" type="number" min="1" step="1">
+                  <label class="form-label" for="guests"> Guests </label>
+                  <input
+                    class="form-control"
+                    id="guests"
+                    name="guests"
+                    type="number"
+                    min="1"
+                    step="1"
+                  />
                 </div>
                 <div class="col-12">
                   <label class="form-label" for="reservation-date">
                     Date
                   </label>
-                  <input class="form-control" id="reservation-date" name="date" type="date">
+                  <input
+                    class="form-control"
+                    id="reservation-date"
+                    name="date"
+                    type="date"
+                  />
                 </div>
                 <div class="col-12">
                   <fieldset>
-                    <legend class="fs-6 fw-semibold">
-                      Seating
-                    </legend>
+                    <legend class="fs-6 fw-semibold">Seating</legend>
                     <div class="d-flex gap-4 flex-wrap">
                       <div class="form-check">
-                        <input class="form-check-input" id="inside" name="seating" type="radio" value="inside">
+                        <input
+                          class="form-check-input"
+                          id="inside"
+                          name="seating"
+                          type="radio"
+                          value="inside"
+                        />
                         <label class="form-check-label" for="inside">
                           Inside
                         </label>
                       </div>
                       <div class="form-check">
-                        <input class="form-check-input" id="terrace" name="seating" type="radio" value="terrace">
+                        <input
+                          class="form-check-input"
+                          id="terrace"
+                          name="seating"
+                          type="radio"
+                          value="terrace"
+                        />
                         <label class="form-check-label" for="terrace">
                           Terrace
                         </label>
@@ -74,27 +106,31 @@
                   </fieldset>
                 </div>
                 <div class="col-12">
-                  <label class="form-label" for="meal">
-                    Meal
-                  </label>
+                  <label class="form-label" for="meal"> Meal </label>
                   <select class="form-select" id="meal" name="meal">
-                    <option value="lunch">
-                      Lunch
-                    </option>
-                    <option value="dinner">
-                      Dinner
-                    </option>
+                    <option value="lunch">Lunch</option>
+                    <option value="dinner">Dinner</option>
                   </select>
                 </div>
                 <div class="col-12">
-                  <label class="form-label" for="comments">
-                    Comments
-                  </label>
-                  <textarea class="form-control" id="comments" name="comments" rows="3" placeholder="Optional requests or additional information"></textarea>
+                  <label class="form-label" for="comments"> Comments </label>
+                  <textarea
+                    class="form-control"
+                    id="comments"
+                    name="comments"
+                    rows="3"
+                    placeholder="Optional requests or additional information"
+                  ></textarea>
                 </div>
                 <div class="col-12">
                   <div class="form-check">
-                    <input class="form-check-input" id="terms" name="terms" type="checkbox" value="accepted">
+                    <input
+                      class="form-check-input"
+                      id="terms"
+                      name="terms"
+                      type="checkbox"
+                      value="accepted"
+                    />
                     <label class="form-check-label" for="terms">
                       I agree to the terms
                     </label>
@@ -111,4 +147,3 @@
     </main>
   </body>
 </html>
-
