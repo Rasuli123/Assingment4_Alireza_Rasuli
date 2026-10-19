@@ -1,0 +1,14 @@
+body { background:#f4f7f5; color:#16302b; }
+.form-panel { background:white; padding:1.5rem; border:1px solid #e6efec; border-radius:1rem; box-shadow:0 .5rem 1.5rem rgb(22 48 43 / 7%); }
+.form-label { font-weight:600; }
+fieldset legend { float:none; }
+.btn-primary { --bs-btn-bg:#0f6b5f; --bs-btn-border-color:#0f6b5f; --bs-btn-hover-bg:#0b5148; --bs-btn-hover-border-color:#0b5148; --bs-btn-active-bg:#0b5148; --bs-btn-active-border-color:#0b5148; }
+.btn:focus-visible { outline:3px solid #f2a93b; outline-offset:3px; }
+.form-control:focus,.form-select:focus,.form-check-input:focus { border-color:#0f6b5f; box-shadow:0 0 0 .2rem rgb(15 107 95 / 20%); }
+.form-control:user-invalid,.form-select:user-invalid,.form-check-input:user-invalid { border-color:#dc3545; }
+.form-control:user-invalid ~ .invalid-feedback,.form-select:user-invalid ~ .invalid-feedback,.form-check-input:user-invalid ~ .invalid-feedback { display:block; }
+
+/* Replace the helper with its error message after an invalid edit. */
+.form-control:user-invalid ~ .form-text { display:none; }
+/* The radio group shares one error rather than repeating it per option. */
+.experience-group:has(input:user-invalid) > .invalid-feedback { display:block; }
